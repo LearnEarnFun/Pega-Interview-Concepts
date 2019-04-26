@@ -3,7 +3,7 @@
     1. Case management
     2. Data management
     3. Application Architecture
-    4. Integrations
+    4. Integration Management
     5. Cluster management
     6. System Performance
     7. System Administration
