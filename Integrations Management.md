@@ -6,6 +6,6 @@
 
 ***OAuth Authentication*** is two a step process verification
 Step 1: Register the OAuth2.0 Client Registration rule with the service provider Client ID and Client Secret Key.
-Step 2: Refer the OAuth2.0 Client Registration rule in the respective connect rule form.
+Step 2: Retrieve the token using the OAuth Service Provider service.
 
-How it works? Connect Service will retrive the token using the provided Client ID and Client Secret Key, then the token is passed as part of the actual service call. Tokem will have an expiry defined at the service provider end. Majority of the Google, AWS, and facebook products comes with this type of authentication. 
+How it works? Connect Service will retrive the token using the provided Client ID and Client Secret Key, then the token is passed as part of the actual service call in header. Tokem will have an expiry defined at the service provider end. Majority of the Google, AWS, and facebook products comes with this type of authentication. 
