@@ -1,4 +1,4 @@
-# Integrations Management
+# Integration Management
 
 ## What are the different types of authentications allowed as part of connecting to a service provided?
 
