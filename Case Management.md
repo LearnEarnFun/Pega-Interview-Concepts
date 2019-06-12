@@ -7,3 +7,7 @@ Call the CorrNew utility activity from a flow to send correspondence if you want
 ## How to invoke the Declare Collection rule from an activity?
 
 Use the **Collect** Keyword - followed by the declare collection rule name.
+
+## How to restrict the Wait Shape resume operation for end users?
+
+On the Wait Shape, there is an option to disable the ***Users can choose to continue process***. This will not allow the user to user to perform any action on the Wait assignment. 
