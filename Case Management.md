@@ -11,3 +11,7 @@ Use the **Collect** Keyword - followed by the declare collection rule name.
 ## How to restrict the Wait Shape resume operation for end users?
 
 On the Wait Shape, there is an option to disable the ***Users can choose to continue process***. This will not allow the user to user to perform any action on the Wait assignment. 
+
+## How to propagate the page context data to the Multiple Child Cases that are getting created from the Page List property?
+
+Create Case smart shape is nothing but the pxAddChildWork activity reference. There is a default extension data transform called __pyAddChildWorkDefaults__. It is used to propagate the data to the Child Page Context that is getting created. 
