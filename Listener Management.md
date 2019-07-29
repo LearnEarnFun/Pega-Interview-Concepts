@@ -6,4 +6,4 @@
 
 ***Publish and Subscribe Model*** is a Topic processing model where a queue item comes and there can be many subscribers listening to that topic. In a topic, the items are not deleted from the JNDI folder.
 
-*PEGA Supports both type of model*
+*PEGA Supports both types of model*
