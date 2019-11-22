@@ -8,7 +8,7 @@
 
 * In the class __Rule-Obj-Report-Definition__, there is a process API activity ***pxRetrieveSearchData** that executes the passed report definition name on the elastic search files. Invoke this through an activity and pass the required report definition name as a parameter. __Note:__ The limitation of this type of execution on a search files is that we can refer only scalar properties and page properties. But, for a page list or page group properties index of list is not maintained in the elastic search files created. 
 
-This type of execution improves the performance and reduces the database calls, and reduces database calls. 
+This type of execution improves the performance and reduces the database calls. 
 
 ## What are the agents involved in creating the index files and syncing across the nodes?
 
