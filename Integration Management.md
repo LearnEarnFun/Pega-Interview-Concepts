@@ -13,3 +13,6 @@ How it works? Connect Service will retrieve the token using the provided Client 
 ## How is the SSO Authentication is implemented through SAML Integration?
 
 ***SSO- Authentication Service*** is used to login through windows active directory credentials. 
+1. Provide __Identify Provider Metadata Information__ that we got from Windows Active Directory - Entity Identificaiton URL, Login Location and Logout Location. This information is specific to the Windows Active Directory environment. 
+2. In the mapping tab, map the information from the SAML fields to the OperatorID Page fields 
+3. There are two activities that are present - Pre-authentication and Post-authentication processing activities. In the Post-authenticaiton processing activity, we can perform the save of the OperatorID Page to save information mapping from SAML file to the OperatorID Page.  
