@@ -15,3 +15,9 @@ __Access Control Policy__ or __Attribute based access control__ is used to restr
 The __Access Control Policy Conditions__ uses the When rules - comparing the class instance attribute values to the clipboard, or operator level values. 
 
 It is different from the __role based access restrictions__. This restriction is at the class instance level. 
+
+## What is the CORS (Cross Origin Resource Sharing) Policy?
+
+The __Cross Origin Resource Sharing__ policy is allowed to defined the allowed origins (kind of whitelisting the IP's), allowed headers, allowed methods, and credential usage for a specific REST Service. 
+
+Map the CORS record to a service rule.
