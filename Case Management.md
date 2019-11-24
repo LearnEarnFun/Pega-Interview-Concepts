@@ -15,3 +15,11 @@ On the Wait Shape, there is an option to disable the ***Users can choose to cont
 ## How to propagate the page context data to the Multiple Child Cases that are getting created from the Page List property?
 
 Create Case smart shape is nothing but the pxAddChildWork activity reference. There is a default extension data transform called __pyAddChildWorkDefaults__. It is used to propagate the data to the Child Page Context that is getting created. 
+
+## How the Parent and child cases locking mechanism works?
+
+The locking strategy whatever we defined on the parent case is followed for the current case and to the corresponding child cases. 
+
+__Default locking strategy__ - Locking the case for a single user for defined time. 
+
+__Optimistic locking strategy__ - Allowing multiple users to access and modify the case. 
