@@ -18,4 +18,4 @@ For example, If we want to address the System getting hanged issue as part of th
 
 ## How you will determine the PEGA License Usage Validation Reports?
 
-There is a PEGA OOTB usage validaiton access group __uvu:user__. The users pointed to this access group will have a portal that provide the list of different license usage validation reports.  
+There is a PEGA OOTB usage validaton access group __uvu:user__. The users pointed to this access group will have a portal that provide the list of different license usage validation reports.  
