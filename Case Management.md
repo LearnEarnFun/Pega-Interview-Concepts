@@ -23,3 +23,9 @@ The locking strategy whatever we defined on the parent case is followed for the 
 __Default locking strategy__ - Locking the case for a single user for defined time. 
 
 __Optimistic locking strategy__ - Allowing multiple users to access and modify the case. 
+
+## How the actual Java Threads or Parallel processing works in PEGA?
+
+__Spin-off && Split For Each__ - are the case shapes treated for parallel processing at the case lifecycle level. 
+
+But, actual Java Thread level parallel processing works using the __QUEUE__ method as part of the activity invocation. 

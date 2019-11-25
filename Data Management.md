@@ -29,3 +29,11 @@ __Requestor scope__ – The data page instance that is created when any thread r
 __Node scope__ – The system checks the Reload if older than fields on the Load Management tab of the data page rule. If the fields are blank, the system uses the value of the Dynamic System Setting DeclarePages/DefaultIdleTimeSeconds, which is set by default to 86400 seconds, or one day.
 
 ***Note: Read-only data pages are never passivated. If a requestor or thread is idle and gets passivated, all read-only data pages in that requestor or thread are cleared and reloaded the next time they are referenced, whether or not Clear pages after non-use is selected.***
+
+## What are the different types of data pages?
+
+There are three different types of data pages
+
+1. __Read-only__: Read-only data pages can be modified during the page load and in the post-processing activities
+2. __Editable__: Initial data page opens up in the read-write mode. Editable is applicable for Thread and Requestor level data pages. 
+3. __Savable__: Savable data page saves the data to the database. 
