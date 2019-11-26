@@ -7,7 +7,7 @@ A classgroup is a configuration as part of the class definition that creates a d
 
 ## What is the workpool?
 
-Workpool is nothing but a classgroup that is configured as part of the access group. 
+Workpool is nothing but a classgroup that is configured as part of the access group. It is the set of allowed workitems or cases that you can work within an application. When you have multiple workpools, you can switch between the workpools from the application menu.
 
 ## What happens if we don't define workpool at the accessgroup level?
 

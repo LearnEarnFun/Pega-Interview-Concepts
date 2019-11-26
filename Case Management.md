@@ -29,3 +29,9 @@ __Optimistic locking strategy__ - Allowing multiple users to access and modify t
 __Spin-off && Split For Each__ - are the case shapes treated for parallel processing at the case lifecycle level. 
 
 But, actual Java Thread level parallel processing works using the __QUEUE__ method as part of the activity invocation. 
+
+## What is the difference between the Obj-Save-Cancel and Rollback methods?
+
+Obj-Save-Cancel method cancels the most recent one deferred save. 
+
+Rollback method rollsback all the deferred save operations. 
