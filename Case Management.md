@@ -35,3 +35,24 @@ But, actual Java Thread level parallel processing works using the __QUEUE__ meth
 Obj-Save-Cancel method cancels the most recent one deferred save. 
 
 Rollback method rollsback all the deferred save operations. 
+
+## How you will handle the flow changes that are in production?
+
+There are three approaches to implement the flow changes that are already in the production.
+
+__Approach #1__: Create distinct flows, and enable the "Creates new work object" to the newly created flows. Remove the "Creates new work object" on the old flows. Implement circumstance to the existing flows. 
+
+Drawbacks:
+- If there are more subprocess levels than four then this is not the recommended approach.
+
+__Approach #2__: Move all existing assignments, sub-process and wait shapes to the side of the flow. Inflight case assignments will follow the previous assignments and the new cases will follow the new assignments. 
+
+__Approach #3__: Add tickets to the newly modified flows. Run a bulk processing job to find all outdated assignments in the system. For each assignment, the bulk processing should call ***Work-.OpenAndLockWork***, then call ***Work-.SetTicket*** on the work page.
+
+Pros:
+- Newly modified flows are clean
+
+__Approach #4__: Revert the user's ruleset list to original, lower versions when dealing with older assignments
+
+Pros:
+- When changes go beyond the flow rules, then this is the only sure approach.
