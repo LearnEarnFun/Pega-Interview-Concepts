@@ -24,3 +24,9 @@ Previous to PEGA 7.2, the concept is single built-on with multiple applicaiton i
 1. As the application users updates the delegated rules, for the production rulesets - leave the "Use Checkout" checkbox to blank in the ruleset security definition 
 
 2. The same concept applies for reporting production ruleset as well
+
+## How does the Locale works in PEGA?
+
+In the operator rule form, we need to define the operator locale. If the operator locale field is blank, then the system uses the browser locale.
+
+Locale is useful in displaying the dates, currencies, and the locale specific field values in the application. 
