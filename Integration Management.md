@@ -22,3 +22,9 @@ How it works? Connect Service will retrieve the token using the provided Client 
 The __Cross Origin Resource Sharing__ policy is allowed to defined the allowed origins (kind of whitelisting the IP's), allowed headers, allowed methods, and credential usage for a specific REST Service. 
 
 Map the CORS record to a service rule.
+
+
+## What are the connect and service request processors?
+
+The connect and service request processors are used for the asynchronous processing of connect-soap or service-soap calls.
+These are the queue data instances, processed by the PEGA-Intsvcs agents. 
