@@ -22,3 +22,5 @@ How it works? Connect Service will retrieve the token using the provided Client 
 The __Cross Origin Resource Sharing__ policy is allowed to defined the allowed origins (kind of whitelisting the IP's), allowed headers, allowed methods, and credential usage for a specific REST Service. 
 
 Map the CORS record to a service rule.
+
+## What are the security policies as part of the Integrations?

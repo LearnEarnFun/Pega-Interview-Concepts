@@ -56,3 +56,9 @@ __Approach #4__: Revert the user's ruleset list to original, lower versions when
 
 Pros:
 - When changes go beyond the flow rules, then this is the only sure approach.
+
+## How will you handle the 10-15 fields changes as part of the screen?
+
+__Approach #1__: If it is very few fields like 3-5, then have to use the ***Field Level Tracking*** feature. It is nothing but the declare trigger. Extend the "pyTrackSecurityChanges" data transform into the appropriate work class. 
+
+__Approach #2__: If it more fiels let's say 10-15, then the approach is different. Populate the required fields into a temporary page or a complete work page. Then convert the page into JSON or XML using the functions - pxConvertPageIntoJSON, pxConvertPageIntoXML. Store the respective string property into a dedicated tablee.
