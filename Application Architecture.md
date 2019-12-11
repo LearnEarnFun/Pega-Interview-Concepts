@@ -33,6 +33,6 @@ Locale is useful in displaying the dates, currencies, and the locale specific fi
 
 ## How is the estimation works as part of the PEGA Application?
 
-Sizing wizard provides the way to do the project estimations. It is navigated throuugh Designer Studio -> Application -> Tools -> Sizing. Sizing is done at the applicaiton level with the respective project methodology. The project methodology includes "Scrum" and "Iterative Waterfall". 
+Sizing wizard provides the way to do the project estimations. It is navigated through ***Designer Studio -> Application -> Tools -> Sizing***. Sizing is done at the applicaiton level with the respective project methodology. The project methodology includes "Scrum" and "Iterative Waterfall". 
 
 __Scrum Methodology__: Provides the list of tasks that are getting planned for each sprint.  
