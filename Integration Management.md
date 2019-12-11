@@ -24,3 +24,8 @@ The __Cross Origin Resource Sharing__ policy is allowed to defined the allowed o
 Map the CORS record to a service rule.
 
 ## What are the security policies as part of the Integrations?
+
+## What are the connect and service request processors?
+
+The connect and service request processors are used for the asynchronous processing of connect-soap or service-soap calls.
+These are the queue data instances, processed by the PEGA-Intsvcs agents. 
