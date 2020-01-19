@@ -29,3 +29,25 @@ Map the CORS record to a service rule.
 
 The connect and service request processors are used for the asynchronous processing of connect-soap or service-soap calls.
 These are the queue data instances, processed by the PEGA-Intsvcs agents. 
+
+## What are the different ways that we can invoke a connector service?
+
+They are three different ways as follows
+
+**Run** : Synchronous way of invoking a service
+
+___Design approach for invokation__: In the invoke activity, call the Connect-REST in run mode
+
+**Run in Parallel**: Create a pool using the ***Load-DataPage*** or ***Call-Async-Activity*** methods and the execute the multiple service calls in a parallel mode. This execution mode creates the child requestor from the current requestor.
+
+__Design approach for invokation__:  Use the ***Connect-Wait*** method, to wait for all child requestors to complete processing and merge into the current requestor. 
+
+**Queue**: This mode is for the Asynchronous processing.
+
+__Design approach for invokation__: 
+
+Step 1: Create the Connector Requestor instance with the custom System Queue class. Refer this instance as the Queue Processing Option in the Connect-REST/Connect-SOAP instance. 
+
+Step 2: In the invoke activity, call the Connector service in the Queue mode. As part of the execution, it will create the System Queue class for processing. ***Pega-IntSvcs Agent Connector standard agents process these requests***.
+
+Step 3: As part of the case design, invoke this connector in the queue mode. Then place assignment in the waiting queue workbasket. Create the ***advance agent*** to process the System Queue class instances with ***Success*** status. This advance agent will progress the case to the next step. 
