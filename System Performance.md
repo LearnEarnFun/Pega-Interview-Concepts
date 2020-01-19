@@ -8,4 +8,4 @@
 * Number of joins referred in the report definition - Recommendation is to have a maximum of three joins
 * Ensure that there are no Left and Right Outer joins in the report definition. 
 * If there is a clipboard size issue, then limit the D page usage to a single page. 
-* Verify the alerts file, if there is any HTTP interaction issues, then the alert will show the activity details that is taking more time for the execution
+* Verify the alerts file, if there is any HTTP interaction issues, ***then the alert will show the activity details that is taking more time for the execution***

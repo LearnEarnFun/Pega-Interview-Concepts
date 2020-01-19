@@ -40,7 +40,7 @@ Rollback method rollsback all the deferred save operations.
 
 There are three approaches to implement the flow changes that are already in the production.
 
-__Approach #1__: Create distinct flows, and enable the "Creates new work object" to the newly created flows. Remove the "Creates new work object" on the old flows. Implement circumstance to the existing flows. 
+__Approach #1__: Create distinct flows, and enable the "Creates new work object" to the newly created flows. Remove the "Creates new work object" on the old flows. Implement date circumstance to the existing flows. 
 
 Drawbacks:
 - If there are more subprocess levels than four then this is not the recommended approach.

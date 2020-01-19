@@ -6,10 +6,16 @@
 
 ## How to invoke a report definition that runs on the Elastic Search Files?
 
-* In the class __Rule-Obj-Report-Definition__, there is a process API activity ***pxRetrieveSearchData** that executes the passed report definition name on the elastic search files. Invoke this through an activity and pass the required report definition name as a parameter. __Note:__ The limitation of this type of execution on a search files is that we can refer only scalar properties and page properties. But, for a page list or page group properties index of list is not maintained in the elastic search files created. 
+* In the class __Rule-Obj-Report-Definition__, there is a process API activity ***pxRetrieveSearchData** that executes the passed report definition name on the elastic search files. Invoke this through an activity and pass the required report definition name as a parameter. 
+
+__Note:__ The limitation of this type of execution on a search files is that we can refer only scalar properties and page properties. But, for a page list or page group properties index of list is not maintained in the elastic search files created. 
 
 This type of execution improves the performance and reduces the database calls. 
 
 ## What are the agents involved in creating the index files and syncing across the nodes?
 
 * PEGA-SearchEngine agents - FTSIncrementalIndexer, FTSConflictsHandler are responsible for creating search index files. 
+
+## How to customize the search properties for a work class?
+
+From PEGA 7.4, system has a rule type called ***Custom Search Properties***. In this rule type, we can customize the requried properties. 
