@@ -40,3 +40,9 @@ __Scrum Methodology__: Provides the list of tasks that are getting planned for e
 ## How do you extend the class structure when you have multiple built-on applications?
 
 It is a bit tricky question. Implemenation application layer is having a multiple built-on applications. If we want to extend the framework or built-on application class functionality then it is to have via direct inheritance. It is not required to have all pre-defined case types for the built on application case types.
+
+For Example:
+
+1. Refer to the PEGA Learning Application: PEGACSSample is built on Customer Service Application.
+
+Any custom case types are only created in the PEGACSSample related rulesets. Other case types and functionalities are used as it is of the PEGA provided Customer Service Application. 
