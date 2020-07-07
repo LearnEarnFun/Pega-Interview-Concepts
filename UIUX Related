@@ -1,0 +1,6 @@
+#UIUX Related
+
+## On a click on the portal, how do you refresh a particular section with D Page in a dashboard instead of loading the complete harness?
+
+Loading the complete harness is expensive as there can be multiple D Pages involved. Create the dashboard using the widgets. 
+On a click of a button or a link then reload the widget using the Other Section. This particular action invokes only the D Page referenced in the widget. This improves the performance. 
