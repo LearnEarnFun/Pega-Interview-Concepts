@@ -36,3 +36,7 @@ Locale is useful in displaying the dates, currencies, and the locale specific fi
 Sizing wizard provides the way to do the project estimations. It is navigated through ***Designer Studio -> Application -> Tools -> Sizing***. Sizing is done at the applicaiton level with the respective project methodology. The project methodology includes "Scrum" and "Iterative Waterfall". 
 
 __Scrum Methodology__: Provides the list of tasks that are getting planned for each sprint.  
+
+## How do you extend the class structure when you have multiple built-on applications?
+
+It is a bit tricky question. Implemenation application layer is having a multiple built-on applications. If we want to extend the framework or built-on application class functionality then it is to have via direct inheritance. It is not required to have all pre-defined case types for the built on application case types.
