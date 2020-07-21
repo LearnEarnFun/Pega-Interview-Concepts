@@ -39,3 +39,27 @@ There are three different types of data pages
 1. __Read-only__: Read-only data pages can be modified during the page load and in the post-processing activities
 2. __Editable__: Initial data page opens up in the read-write mode. Editable is applicable for Thread and Requestor level data pages. 
 3. __Savable__: Savable data page saves the data to the database. 
+
+# LSA Level
+## What are the data model principles?
+
+Below are the list of principles that we have to follow as part of the data model design
+
+1. __Data Modelling Composition__
+2. __Data Modelling Encapsulation__
+3. __Data Modelling Inheritance__
+4. __Data Modelling Polymorphism__
+
+## How do you handle the data model system of record?
+
+Below are the three options that are available to define at the property level
+
+1. __Manual__
+2. __Refer to a Data Page__ 
+
+Scenario: System of Record - Cutomer data is dynamic and case should have the updated relevant information 
+
+3. __Copy from a Data Page__
+
+Scenario: System of Record - Finance Product Details - Need to ensure the data integrity of the finance product details at the time of case creation. 
+After the case creation, the changes to finance product details should not have impact to the transactional case.
