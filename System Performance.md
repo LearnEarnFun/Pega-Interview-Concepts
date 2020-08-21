@@ -12,7 +12,7 @@
 
 ## How you will improve the System Response Times for interactive users after system startup?
 
-Run the static assembler using  - Configure -> System -> Assembly -> Static Assembler. This static assembler helps to pre-assemble all the rules and cached the rules of the application. This step is useful in the following scenarios:
+Run the static assembler using  - Configure -> System -> Assembly -> Static Assembler. This static assembler helps to pre-assemble  and cache the rules of the application. This step is useful in the following scenarios:
 
 * After system start-up, especially after new ruleset versions imported into the system
 * Many rules have changed 
